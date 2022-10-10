@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//ApacheSoftware Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />        
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="TRANG CHỦ" />
+        <put-attribute name="content" value="/WEB-INF/jsps/index.jsp" />
+    </definition>
+    <definition name="cart" extends="baseLayout">
+        <put-attribute name="title" value="Trang chu" />
+        <put-attribute name="content" value="/WEB-INF/jsps/cart.jsp" />
+    </definition>
+    <definition name="tour" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ TOUR" />
+        <put-attribute name="content" value="/WEB-INF/jsps/tour.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="ĐĂNG NHẬP" />
+        <put-attribute name="content" value="/WEB-INF/jsps/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="ĐĂNG KÝ" />
+        <put-attribute name="content" value="/WEB-INF/jsps/register.jsp" />
+    </definition>
+    <definition name="user" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ NHÂN VIÊN" />
+        <put-attribute name="content" value="/WEB-INF/jsps/user.jsp" />
+    </definition>
+    <definition name="user-detail" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ NHÂN VIÊN" />
+        <put-attribute name="content" value="/WEB-INF/jsps/user-detail.jsp" />
+    </definition>
+    <definition name="client" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ KHÁCH HÀNG" />
+        <put-attribute name="content" value="/WEB-INF/jsps/client.jsp" />
+    </definition>
+    <definition name="client-detail" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ KHÁCH HÀNG" />
+        <put-attribute name="content" value="/WEB-INF/jsps/client-detail.jsp" />
+    </definition>
+    <definition name="tourdetail" extends="baseLayout">
+        <put-attribute name="title" value="TOUR DETAIL" />
+        <put-attribute name="content" value="/WEB-INF/jsps/tourdetail.jsp" />
+    </definition>
+     <definition name="quanlytour" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ TOUR" />
+        <put-attribute name="content" value="/WEB-INF/jsps/quanlytour.jsp" />
+    </definition>
+     <definition name="addtour" extends="baseLayout">
+        <put-attribute name="title" value="THÊM TOUR" />
+        <put-attribute name="content" value="/WEB-INF/jsps/addtour.jsp" />
+    </definition>
+    <definition name="updatetour" extends="baseLayout">
+        <put-attribute name="title" value="CẬP NHẬT TOUR" />
+        <put-attribute name="content" value="/WEB-INF/jsps/updatetour.jsp" />
+    </definition>
+    <definition name="news-manage" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ TIN TỨC" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-manage.jsp" />
+    </definition>
+    <definition name="news-detail" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-detail.jsp" />
+    </definition>
+    <definition name="news-category-details" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-category-details.jsp" />
+    </definition>
+    <definition name="news-category-update" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-category-update.jsp" />
+    </definition>
+    <definition name="news-update" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-update.jsp" />
+    </definition>
+    <definition name="news-view" extends="baseLayout">
+        <put-attribute name="title" value="DANH SÁCH TIN TỨC" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-view.jsp" />
+    </definition>
+    <definition name="news" extends="baseLayout">
+        <put-attribute name="title" value="" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news.jsp" />
+    </definition>
+    <definition name="news-category" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ TRANG WEB TỔNG HỢP TIN TỨC" />
+        <put-attribute name="content" value="/WEB-INF/jsps/news-category.jsp" />
+    </definition>
+    <definition name="car" extends="baseLayout">
+        <put-attribute name="title" value="DANH SÁCH XE THUÊ" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car.jsp" />
+    </definition>
+    <definition name="car-detail" extends="baseLayout">
+        <put-attribute name="title" value="CHI TIẾT XE" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-detail.jsp" />
+    </definition>
+    <definition name="car-order" extends="baseLayout">
+        <put-attribute name="title" value="THUÊ XE" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-order.jsp" />
+    </definition>
+    <definition name="car-manage" extends="baseLayout">
+        <put-attribute name="title" value="QUẢN LÝ XE" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-manage.jsp" />
+    </definition>
+    <definition name="hottour" extends="baseLayout">
+        <put-attribute name="title" value="Hot Tour" />
+        <put-attribute name="content" value="/WEB-INF/jsps/hottour.jsp" />
+    </definition>
+    <definition name="cancel" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán lỗi" />
+        <put-attribute name="content" value="/WEB-INF/jsps/cancel.jsp" />
+    </definition>
+    <definition name="success" extends="baseLayout">
+        <put-attribute name="title" value="Thanh toán thành công" />
+        <put-attribute name="content" value="/WEB-INF/jsps/success.jsp" />
+    </definition>
+    <definition name="car-add" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý xe" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-add.jsp" />
+    </definition>
+    <definition name="baseAdminLayout" template="/WEB-INF/layout/base-admin.jsp">
+        <put-attribute name="title" value="Thống kê" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="left" value="/WEB-INF/layout/admin-left.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />        
+    </definition>
+    <definition name="car-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê xe theo danh mục" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-stats.jsp" />
+    </definition>
+    <definition name="chat" extends="baseLayout">
+        <put-attribute name="title" value="Tư vấn" />
+        <put-attribute name="content" value="/WEB-INF/jsps/chat.jsp" />
+    </definition>
+    <definition name="car-sale-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo xe" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-sale-stats.jsp" />
+    </definition>
+    <definition name="car-month-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê doanh thu theo tháng" />
+        <put-attribute name="content" value="/WEB-INF/jsps/car-month-stats.jsp" />
+    </definition>
+    <definition name="pay-stats" extends="baseAdminLayout">
+        <put-attribute name="title" value="Thống kê hình thức thanh toán" />
+        <put-attribute name="content" value="/WEB-INF/jsps/pay-stats.jsp" />
+    </definition>
+</tiles-definitions>
